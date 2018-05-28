@@ -1,0 +1,17 @@
+/*  CSS */
+
+*
+{
+  margin:0;
+  padding:0;
+  border:0;
+  font-family:Arial;
+  font-size:30pt;
+}
+
+h1
+{
+  background-color:#f1f2f6;
+  color:#2ed573;
+  text-shadow:2px 2px 2px #000;
+}
