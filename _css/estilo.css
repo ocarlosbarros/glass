@@ -8,14 +8,30 @@
 
 body
 {
-  background-color:#FFF;
+  background-color:#DDD;
   color:rgba(0,0,0,1);
+}
+
+#interface
+{
+  width:900px;
+  margin:-20px auto 10px auto;
+  background-color:#FFF;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, .5);
+  padding:10px;
 }
 
 p
 {
   text-align:justify;
   text-indent:50px;
+}
+
+#cabecalho #icone
+{
+  position:absolute;
+  top:40px;
+  left:950px;
 }
 
 /*  FORMATAÇÃO DE IMAGENS COM LEGENDA */
@@ -65,8 +81,8 @@ p
   list-style:none;
   text-transform:uppercase;
   position:absolute;
-  top:0px;
-  left:100px;
+  top:-20px;
+  left:300px;
 }
 
 #menu li
