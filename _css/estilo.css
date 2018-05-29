@@ -1,5 +1,10 @@
 /*                                  CSS                                       */
 @charset "UTF-8";
+@font-face
+{
+  font-family:'Bubblegum';
+  src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 *
 {
@@ -31,14 +36,14 @@ p
 {
   border-bottom:1px solid #DDD;
   height:150px;
-  background:url(../_imagens/glass-logo-peq.jpg);
+  background:url("../_imagens/glass-logo-peq.jpg");
   background-repeat:no-repeat;
   background-position:0px 90px;
 }
 
 #cabecalho h1
 {
-  font-family:Arial, sans-serif;
+  font-family:'Bubblegum',sans-serif;
   font-size:30pt;
   color:#606060;
   text-shadow:1px 1px 1px rgba(0,0,0,.6);
