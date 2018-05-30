@@ -182,9 +182,45 @@ footer p
 #tbl_fichaTecnica 
 {
     border:1px solid #606060;
+    border-spacing:0px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#tbl_fichaTecnica caption span
+{
+  display:block;
+  float:right;
+  margin-top:10px;
+  font-size:8pt;
+  color:#000;
+  
 }
 
 #tbl_fichaTecnica td
 {
-  border:1px dotted #606060;
+  border:1px solid #606060;
+  padding:10px;
+}
+
+#tbl_fichaTecnica .align_right
+{
+  text-align:right;
+  background-color:#CECECE;
+}
+
+#tbl_fichaTecnica .align_left
+{
+  text-align:"left";
+  vertical-align:top;
+  font-weight:bold;
+  color:#FFF;
+  background-color:#606060;
+}
+
+#tbl_fichaTecnica caption
+{
+  font-size:13pt;
+  font-weight:bolder;
+  color:#888;
 }
