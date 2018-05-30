@@ -178,3 +178,13 @@ footer p
 {
   text-align:center;
 }
+
+#tbl_fichaTecnica 
+{
+    border:1px solid #606060;
+}
+
+#tbl_fichaTecnica td
+{
+  border:1px dotted #606060;
+}
