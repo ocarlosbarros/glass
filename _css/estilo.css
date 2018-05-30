@@ -4,6 +4,7 @@
   font-family:'Bubblegum';
   src:url("../_fonts/bubblegum-sans-regular.otf");
 }
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 *
 {
@@ -52,10 +53,9 @@ p
 
 #cabecalho h2
 {
-  font-family:Arial, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size:15pt;
   color:#888;
-  text-shadow:1px 1px 1px rgba(0, 0, 0, .6);
   margin-top:0px;
   padding:0px;
 }
@@ -102,7 +102,6 @@ p
 }
 
 /*  ESTILIZACAO DO MENU    */
-
 #menu
 {
   display:block;
@@ -148,4 +147,34 @@ p
 {
   color:#FFF;
   transition:color 1s;
+}
+/*----------------------------------------------------------------------------*/
+
+/*    ESTRUTURA     */
+#main
+{
+  display:block;
+  width:550px;
+  float:left;
+  border-right:1px solid #606060;
+  padding-right:15px;
+}
+
+#sidebar
+{
+  display:block;
+  width:320px;
+  float:right;
+
+}
+
+footer
+{
+  clear:both;
+  border-top:1px solid #606060;
+}
+
+footer p
+{
+  text-align:center;
 }
