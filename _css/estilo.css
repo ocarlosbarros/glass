@@ -6,13 +6,9 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
-*
-{
-
-}
-
 body
 {
+  font-family:Arial, sans-serif;
   background-color:#DDD;
   color:rgba(0,0,0,1);
 }
@@ -32,40 +28,17 @@ p
   text-indent:50px;
 }
 
-#cabecalho
+a
 {
-  border-bottom:1px solid #DDD;
-  height:150px;
-  background:url("../_imagens/glass-logo-peq.jpg");
-  background-repeat:no-repeat;
-  background-position:0px 90px;
-}
-
-#cabecalho h1
-{
-  font-family:'Bubblegum',sans-serif;
-  font-size:30pt;
   color:#606060;
-  text-shadow:1px 1px 1px rgba(0,0,0,.6);
-  margin-bottom:0px;
-  padding:0px;
+  text-decoration:none; 
 }
 
-#cabecalho h2
+a:hover
 {
-  font-family: 'Titillium Web', sans-serif;
-  font-size:15pt;
-  color:#888;
-  margin-top:0px;
-  padding:0px;
+  text-decoration:underline;
 }
 
-#cabecalho #icone
-{
-  position:absolute;
-  top:70px;
-  left:950px;
-}
 
 /*  FORMATAÇÃO DE IMAGENS COM LEGENDA */
 
@@ -154,7 +127,7 @@ p
 #main
 {
   display:block;
-  width:550px;
+  width:500px;
   float:left;
   border-right:1px solid #606060;
   padding-right:15px;
@@ -162,10 +135,30 @@ p
 
 #sidebar
 {
+  margin:20px 10px 10px 10px;
   display:block;
-  width:320px;
+  width:330px;
   float:right;
+  background-color:#DDD;
+  box-shadow:2px 2px 2px rgba(0,0,0,.5);
+  padding:10px;
 
+}
+
+#sideBar h1
+{
+  font-family:'Bubblegum', sans-serif;
+  font-size:20pt;
+  color: #606060;
+  margin-top:0px;
+}
+
+#sideBar h2
+{
+  font-size:13pt;
+  color:#FFF;
+  background-color:#606060;
+  padding:5px;
 }
 
 footer
@@ -203,6 +196,11 @@ footer p
   padding:10px;
 }
 
+.align_right
+{
+  text-align:right;
+}
+
 #tbl_fichaTecnica .align_right
 {
   text-align:right;
@@ -223,4 +221,72 @@ footer p
   font-size:13pt;
   font-weight:bolder;
   color:#888;
+}
+
+#noticiaPrincipal h2
+{
+  font-size:13pt;
+  color:#606060;
+  background-color:#DDD;
+  margin:10px 0px 10px 0px;
+  padding:5px 0px 5px 10px;
+}
+
+#cabecalho
+{
+  border-bottom:1px solid #DDD;
+  height:150px;
+  background:url("../_imagens/glass-logo-peq.jpg");
+  background-repeat:no-repeat;
+  background-position:0px 90px;
+}
+
+#cabecalhoArtigo h1
+{
+  font-family:'Bubblegum',sans-serif;
+  font-size:20pt;
+  color:#606060;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+#cabecalhoArtigo h2
+{
+  font-size:13pt;
+  color:#CECECE;
+  background-color:#FFF;
+  margin:0px;
+}
+
+#cabecalhoArtigo h3
+{
+  font-size:12pt;
+  color:#606060;
+
+}
+
+#cabecalho h1
+{
+  font-family:'Bubblegum',sans-serif;
+  font-size:30pt;
+  color:#606060;
+  text-shadow:1px 1px 1px rgba(0,0,0,.6);
+  margin-bottom:0px;
+  padding:0px;
+}
+
+#cabecalho h2
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:15pt;
+  color:#888;
+  margin-top:0px;
+  padding:0px;
+}
+
+#cabecalho #icone
+{
+  position:absolute;
+  top:70px;
+  left:950px;
 }
