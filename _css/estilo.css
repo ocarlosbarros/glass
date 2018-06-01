@@ -1,292 +1,258 @@
 /*                                  CSS                                       */
+
 @charset "UTF-8";
 @font-face {
-  font-family:'Bubblegum';
-  src:url("../_fonts/bubblegum-sans-regular.otf");
+    font-family: 'Bubblegum';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
 }
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-
-body
-{
-  font-family:Arial, sans-serif;
-  background-color:#DDD;
-  color:rgba(0,0,0,1);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DDD;
+    color: rgba(0, 0, 0, 1);
 }
 
-#interface
-{
-  width:900px;
-  margin:-20px auto 10px auto;
-  background-color:#FFF;
-  box-shadow:0px 0px 10px rgba(0, 0, 0, .5);
-  padding:10px;
+#interface {
+    width: 900px;
+    margin: -20px auto 10px auto;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
 }
 
-p
-{
-  text-align:justify;
-  text-indent:50px;
+p {
+    text-align: justify;
+    text-indent: 50px;
 }
 
-a
-{
-  color:#606060;
-  text-decoration:none; 
+a {
+    color: #606060;
+    text-decoration: none;
 }
 
-a:hover
-{
-  text-decoration:underline;
+a:hover {
+    text-decoration: underline;
 }
 
 
 /*  FORMATAÇÃO DE IMAGENS COM LEGENDA */
 
-.foto-legenda
-{
-  position:relative;
-  border:8px solid #FFF;
-  box-shadow:1px 1px 4px #000;
+.foto-legenda {
+    position: relative;
+    border: 8px solid #FFF;
+    box-shadow: 1px 1px 4px #000;
 }
 
-.foto-legenda img
-{
-  width:100%;
-  height:100%;
+.foto-legenda img {
+    width: 100%;
+    height: 100%;
 }
 
-.foto-legenda figcaption
-{
-  opacity:0;
-  position:absolute;
-  top:0px;
-  background-color: rgba(0,0,0,.4);
-  color:#FFF;
-  width:100%;
-  height: 100%;
-  padding:10px;
-  box-sizing:border-box;
-  transition: opacity 1s;
+.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
 }
 
-.foto-legenda:hover figcaption
-{
-  opacity:1;
+.foto-legenda:hover figcaption {
+    opacity: 1;
 }
+
 
 /*  ESTILIZACAO DO MENU    */
-#menu
-{
-  display:block;
+
+#menu {
+    display: block;
 }
 
-#menu h1
-{
-  display:none;
+#menu h1 {
+    display: none;
 }
 
-#menu ul
-{
-  list-style:none;
-  text-transform:uppercase;
-  position:absolute;
-  top:-20px;
-  left:300px;
+#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
 }
 
-#menu li
-{
-  display:inline-block;
-  background-color:#DDD;
-  margin:2px;
-  padding:10px;
+#menu li {
+    display: inline-block;
+    background-color: #DDD;
+    margin: 2px;
+    padding: 10px;
 }
 
-#menu li:hover
-{
-  background-color:#606060;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-
+#menu li:hover {
+    background-color: #606060;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
-#menu a
-{
-  color:#000;
-  text-decoration:none;
+#menu a {
+    color: #000;
+    text-decoration: none;
 }
 
-#menu a:hover
-{
-  color:#FFF;
-  transition:color 1s;
+#menu a:hover {
+    color: #FFF;
+    transition: color 1s;
 }
+
+
 /*----------------------------------------------------------------------------*/
 
+
 /*    ESTRUTURA     */
-#main
-{
-  display:block;
-  width:500px;
-  float:left;
-  border-right:1px solid #606060;
-  padding-right:15px;
+
+#main {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
 }
 
-#sideBar
-{
-  margin:20px 10px 10px 10px;
-  display:block;
-  width:330px;
-  float:right;
-  background-color:#DDD;
-  box-shadow:2px 2px 2px rgba(0,0,0,.5);
-  padding:10px;
-
+#sideBar {
+    margin: 20px 10px 10px 10px;
+    display: block;
+    width: 330px;
+    float: right;
+    background-color: #DDD;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    padding: 10px;
 }
 
-#sideBar h1
-{
-  font-family:'Bubblegum', sans-serif;
-  font-size:20pt;
-  color: #606060;
-  margin-top:0px;
+#sideBar h1 {
+    font-family: 'Bubblegum', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
 }
 
-#sideBar h2
-{
-  font-size:13pt;
-  color:#FFF;
-  background-color:#606060;
-  padding:5px;
+#sideBar h2 {
+    font-size: 13pt;
+    color: #FFF;
+    background-color: #606060;
+    padding: 5px;
 }
 
-footer
-{
-  clear:both;
-  border-top:1px solid #606060;
+footer {
+    clear: both;
+    border-top: 1px solid #606060;
 }
 
-footer p
-{
-  text-align:center;
+footer p {
+    text-align: center;
 }
 
-#tbl_fichaTecnica 
-{
-    border:1px solid #606060;
-    border-spacing:0px;
+#tbl_fichaTecnica {
+    border: 1px solid #606060;
+    border-spacing: 0px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
 
-#tbl_fichaTecnica caption span
-{
-  display:block;
-  float:right;
-  margin-top:10px;
-  font-size:8pt;
-  color:#000;
-  
+#tbl_fichaTecnica caption span {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    font-size: 8pt;
+    color: #000;
 }
 
-#tbl_fichaTecnica td
-{
-  border:1px solid #606060;
-  padding:10px;
+#tbl_fichaTecnica td {
+    border: 1px solid #606060;
+    padding: 10px;
 }
 
-.align_right
-{
-  text-align:right;
+.align_right {
+    text-align: right;
 }
 
-#tbl_fichaTecnica .align_right
-{
-  text-align:right;
-  background-color:#CECECE;
+#tbl_fichaTecnica .align_right {
+    text-align: right;
+    background-color: #CECECE;
 }
 
-#tbl_fichaTecnica .align_left
-{
-  text-align:"left";
-  vertical-align:top;
-  font-weight:bold;
-  color:#FFF;
-  background-color:#606060;
+#tbl_fichaTecnica .align_left {
+    text-align: "left";
+    vertical-align: top;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #606060;
 }
 
-#tbl_fichaTecnica caption
-{
-  font-size:13pt;
-  font-weight:bolder;
-  color:#888;
+#tbl_fichaTecnica caption {
+    font-size: 13pt;
+    font-weight: bolder;
+    color: #888;
 }
 
-#noticiaPrincipal h2
-{
-  font-size:13pt;
-  color:#606060;
-  background-color:#DDD;
-  margin:10px 0px 10px 0px;
-  padding:5px 0px 5px 10px;
+#noticiaPrincipal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #DDD;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 10px;
 }
 
-#cabecalho
-{
-  border-bottom:1px solid #DDD;
-  height:150px;
-  background:url("../_imagens/glass-logo-peq.jpg");
-  background-repeat:no-repeat;
-  background-position:0px 90px;
+#cabecalho {
+    border-bottom: 1px solid #DDD;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 90px;
 }
 
-#cabecalhoArtigo h1
-{
-  font-family:'Bubblegum',sans-serif;
-  font-size:20pt;
-  color:#606060;
-  margin-top:0px;
-  margin-bottom:0px;
+#cabecalhoArtigo h1 {
+    font-family: 'Bubblegum', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#cabecalhoArtigo h2
-{
-  font-size:13pt;
-  color:#CECECE;
-  background-color:#FFF;
-  margin:0px;
+#cabecalhoArtigo h2 {
+    font-size: 13pt;
+    color: #CECECE;
+    background-color: #FFF;
+    margin: 0px;
 }
 
-#cabecalhoArtigo h3
-{
-  font-size:12pt;
-  color:#606060;
-
+#cabecalhoArtigo h3 {
+    font-size: 12pt;
+    color: #606060;
 }
 
-#cabecalho h1
-{
-  font-family:'Bubblegum',sans-serif;
-  font-size:30pt;
-  color:#606060;
-  text-shadow:1px 1px 1px rgba(0,0,0,.6);
-  margin-bottom:0px;
-  padding:0px;
+#cabecalho h1 {
+    font-family: 'Bubblegum', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
-#cabecalho h2
-{
-  font-family: 'Titillium Web', sans-serif;
-  font-size:15pt;
-  color:#888;
-  margin-top:0px;
-  padding:0px;
+#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888;
+    margin-top: 0px;
+    padding: 0px;
 }
 
-#cabecalho #icone
-{
-  position:absolute;
-  top:70px;
-  left:950px;
+#cabecalho #icone {
+    position: absolute;
+    top: 75px;
+    left: 950px;
 }
