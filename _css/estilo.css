@@ -122,6 +122,10 @@ a:hover {
     padding-right: 15px;
 }
 
+#mainSpecs {
+    width: 100%;
+}
+
 #sideBar {
     margin: 20px 10px 10px 10px;
     display: block;
