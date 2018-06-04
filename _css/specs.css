@@ -13,3 +13,7 @@
     border: none;
     overflow: hidden;
 }
+
+#frameSpec::-webkit-scrollbar {
+    display: none;
+}
