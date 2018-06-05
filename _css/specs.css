@@ -1,17 +1,20 @@
-                    @charset "UTF-8";
-                    /*      Configuração Iframe     */
-                    
-                    #content {
-                        width: 1000px;
-                        margin: auto;
-                    }
-                    
-                    #frameSpec {
-                        width: 400px;
-                        height: 280px;
-                        border: none;
-                    }
-                    
-                    #frameSpec::-webkit-scrollbar {
-                        display: none;
-                    }
+/*                                  CSS                                       */
+
+@charset "UTF-8";
+
+/*      Configuração Iframe     */
+
+#content {
+    width: 1000px;
+    margin: auto;
+}
+
+#frameSpec {
+    width: 400px;
+    height: 280px;
+    border: none;
+}
+
+#frameSpec::-webkit-scrollbar {
+    display: none;
+}
