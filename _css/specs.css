@@ -1,19 +1,18 @@
-@charset "UTF-8";
-
-/*      Configuração Iframe     */
-
-#content {
-    width: 1000px;
-    margin: auto;
-}
-
-#frameSpec {
-    width: 380px;
-    height: 280px;
-    border: none;
-    overflow: hidden;
-}
-
-#frameSpec::-webkit-scrollbar {
-    display: none;
-}
+                    @charset "UTF-8";
+                    /*      Configuração Iframe     */
+                    
+                    #content {
+                        width: 1000px;
+                        margin: auto;
+                    }
+                    
+                    #frameSpec {
+                        width: 380px;
+                        height: 280px;
+                        border: none;
+                        overflow: hidden;
+                    }
+                    
+                    #frameSpec::-webkit-scrollbar {
+                        display: none;
+                    }
