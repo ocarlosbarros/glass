@@ -1,2 +1,27 @@
-@charset "UTF-8"
+@charset "UTF-8";
+
 /*      CSS     */
+
+#multimedia {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+
+#musica {
+    display: block;
+    width: 300px;
+    padding-left: 5px;
+    position: relative;
+    top: 490px;
+    left: 570px;
+}
+
+#filme {
+    display: block;
+    width: 440px;
+    position: relative;
+    top: 60px;
+    left: 85px;
+}
