@@ -17,6 +17,7 @@
     border: 5px solid #FFF;
     background-color: #FFF;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all 0.3s ease-in;
 }
 
 #albumFotos #foto01 {
@@ -33,6 +34,10 @@
     line-height: 375px;
     padding: 5px;
     transition: opacity 1s;
+}
+
+#albumFotos li:hover {
+    -webkit-transform: scale(1.5);
 }
 
 #albumFotos li:hover span {
