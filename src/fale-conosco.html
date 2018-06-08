@@ -6,6 +6,13 @@
     <link rel="stylesheet" type="text/css" href="../_css/estilo.css" />
     <link rel="stylesheet" type="text/css" href="../_css/form.css" />
     <title>Tudo sobre Google Glass</title>
+    <script>
+        function calcularTotal() {
+            var quantidade = parseInt(document.getElementById("c_quantidade").value);
+            var total = 1500 * quantidade;
+            document.getElementById("c_precoTotal").value = total;
+        }
+    </script>
 </head>
 
 <body>
@@ -34,7 +41,7 @@
                     <h2>por Gustavo Guanabara</h2>
                     <h3 class="align_right">Atualizado em 01/Maio/2013</h3>
                 </header>
-                <form>
+                <form method="POST" id="f_contato" action="fale-conosco.html" oninput="calcularTotal()">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
                         <p>
@@ -65,7 +72,8 @@
                     <fieldset id="usuario">
                         <legend>Endereço do Usuário</legend>
                         <p>
-                            <label for="c_endereco">Logradouro:</label><input type="text" name="t_endereco" id="c_endereco" size="13" maxlength="80" />
+                            <label for="c_endereco">Logradouro:</label>
+                            <input type="text" name="t_endereco" id="c_endereco" size="20" maxlength="80" placeholder="Rua,Avenida, Travessa, ..." />
                         </p>
                         <p>
                             <label for="c_numero">Número:</label>
@@ -73,26 +81,68 @@
                         </p>
                         <p>
                             <label for="c_estado">Estado:</label>
+                            <select name="t_estado" id="c_estado">
+                                <optgroup label="Região Sudeste">
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="RJ">Rio De Janeiro</option>
+                                    <option value="SP" selected="selected">São Paulo</option>
+                                </optgroup>
+
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="SC">Santa Catarina</option>
+                                </optgroup>
+                            </select>
                         </p>
                         <p>
                             <label for="c_cidade">Cidade:</label>
+                            <input type="text" name="t_cidade" id="c_cidade" size="20" maxlegth="40" placeholder="Sua Cidade" list="cidades" />
+                            <datalist name="t_cidade" id="cidades">
+                                <option value="Belford Roxo"></option>
+                                <option value="Niterói"></option>
+                                <option value="Nova Iguaçu"></option>
+                                <option value="Rio De Janeiro"></option>
+                            </datalist>
                         </p>
                     </fieldset>
                     <!-- FIM CAMPOS DE INFORMAÇÃO DO ENDEREÇO DO USUÁRIO -->
                     <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
-                        <p>Grau de Urgência:</p>
-                        <p>Mensagem:</p>
+                        <p>
+                            <label for="c_urgencia">Grau de Urgência:</label> Mín
+                            <input type="range" name="t_urgencia" id="c_urgencia" min="0" max="10" step="2" />Máx
+                        </p>
+                        <p>
+                            <label for="c_msg">Mensagem:</label>
+                            <textarea name="txt_msg" id="c_txtMsg" cols="45" rows="5" placeholder="Digite aqui a sua mensagem!">
+
+                            </textarea>
+                        </p>
                     </fieldset>
                     <!-- FIM CAMPOS DE MENSAGENS DO USUÁRIO -->
                     <fieldset id="pedido">
-                        <legend>Quero um Google Glass Gostaria de adquirir um Google Glass quando disponível</legend>
-                        <p>Cor:</p>
-                        <p>Quantidade:</p>
-                        <p>Preço Total: R$</p>
+                        <legend>Quero um Google Glass</legend>
+                        <p>
+                            <input type="checkbox" name="t_disponivel" id="c_disponivel" />
+                            <label for="c_disponivel">Gostaria de adquirir um Google Glass quando disponível.</label>
+                        </p>
+                        <p>
+                            <label for="c_cor">Cor:</label>
+                            <input type="color" name="t_cor" id="c_cor" value="#3498DB">
+                        </p>
+                        <p>
+                            <label for="c_quantidade">Quantidade:</label>
+                            <input type="number" name="t_quantidade" id="c_quantidade" min="1" max="5" value="0" />
+                        </p>
+                        <p>
+                            <label for="c_precoTotal">Preço Total: R$</label>
+                            <input type="text" name="t_precoTotal" id="c_precoTotal" placeholder="Total a pagar " readonly />
+                        </p>
                     </fieldset>
                     <!-- FIM CAMPOS DE PEDIDOS DO USUÁRIO -->
-                    <button>Enviar</button>
+                    <input type="submit" value="Enviar" />
                 </form>
             </article>
         </section>
