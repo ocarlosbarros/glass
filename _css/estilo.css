@@ -228,14 +228,14 @@ footer p {
 
 #cabecalhoArtigo h2 {
     font-size: 13pt;
-    color: #CECECE;
+    color: #606060;
     background-color: #FFF;
     margin: 0px;
 }
 
 #cabecalhoArtigo h3 {
     font-size: 12pt;
-    color: #606060;
+    color: #CECECE;
 }
 
 #cabecalho h1 {
