@@ -56,20 +56,19 @@
                             <label for="c_email">E-mail:</label>
                             <input type="email" name="t_email" id="c_email" size="20" maxlength="40" />
                         </p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="t_sexo" id="c_masculino" /><label for="c_masculino">Masculino</label>
+                            <br/>
+                            <input type="radio" name="t_sexo" id="c_feminino" checked="checked"><label for="c_feminino">Feminino</label>
+                        </fieldset>
+                        <p>
+                            <label for="c_nascimento">Data de Nascimento:</label><input type="date" name="t_nascimento" id="c_nascimento" />
+                        </p>
                     </fieldset>
                     <!-- FIM CAMPOS DE INFORMAÇÃO DO USUÁRIO -->
-                    <fieldset>
-                        <legend>Sexo:</legend>
-                        <input type="radio" name="t_sexo" id="c_masculino" /><label for="c_masculino">Masculino</label>
-                        <br/>
-                        <input type="radio" name="t_sexo" id="c_feminino" checked="checked"><label for="c_feminino">Feminino</label>
                     </fieldset>
-                    <!-- FIM CAMPOS DE INFORMAÇÃO DO SEXO DO USUÁRIO -->
-                    <p>
-                        <label for="c_nascimento">Data de Nascimento:</label><input type="date" name="t_nascimento" id="c_nascimento" />
-                    </p>
-                    </fieldset>
-                    <fieldset id="usuario">
+                    <fieldset id="endereco">
                         <legend>Endereço do Usuário</legend>
                         <p>
                             <label for="c_endereco">Logradouro:</label>
@@ -116,13 +115,13 @@
                         </p>
                         <p>
                             <label for="c_msg">Mensagem:</label>
-                            <textarea name="txt_msg" id="c_txtMsg" cols="45" rows="5" placeholder="Digite aqui a sua mensagem!">
+                            <textarea name="txt_msg" id="c_txtMsg" cols="35" rows="5" placeholder="Digite aqui a sua mensagem!">
 
                             </textarea>
                         </p>
                     </fieldset>
                     <!-- FIM CAMPOS DE MENSAGENS DO USUÁRIO -->
-                    <fieldset id="pedido">
+                    <fieldset id="pagamento">
                         <legend>Quero um Google Glass</legend>
                         <p>
                             <input type="checkbox" name="t_disponivel" id="c_disponivel" />
@@ -142,7 +141,7 @@
                         </p>
                     </fieldset>
                     <!-- FIM CAMPOS DE PEDIDOS DO USUÁRIO -->
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" id="btn_enviar" value="Enviar" />
                 </form>
             </article>
         </section>
