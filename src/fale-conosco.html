@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="../_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/form.css" />
     <title>Tudo sobre Google Glass</title>
 </head>
 
@@ -33,10 +34,66 @@
                     <h2>por Gustavo Guanabara</h2>
                     <h3 class="align_right">Atualizado em 01/Maio/2013</h3>
                 </header>
-                <p>
-                    Identificação do Usuário Nome: Senha: E-mail: Sexo: - Masculino - Feminino Data de Nascimento: Endereço do Usuário Logradouro: Número: Estado: Cidade: Mensagem do Usuário Grau de Urgência: Mensagem: Quero um Google Glass Gostaria de adquirir um Google
-                    Glass quando disponível Cor: Quantidade: Preço Total: R$ [BOTÃO ENVIAR]
-                </p>
+                <form>
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <p>
+                            <label for="c_nome">Nome:</label>
+                            <input type="text" name="t_nome" id="c_nome" size="20" maxlength="30" placeholder="Nome Completo" />
+                        </p>
+                        <p>
+                            <label for="c_senha">Senha:</label>
+                            <input type="password" name="t_senha" id="c_senha" size="8" maxlength="8" />
+                        </p>
+                        <p>
+                            <label for="c_email">E-mail:</label>
+                            <input type="email" name="t_email" id="c_email" size="20" maxlength="40" />
+                        </p>
+                    </fieldset>
+                    <!-- FIM CAMPOS DE INFORMAÇÃO DO USUÁRIO -->
+                    <fieldset>
+                        <legend>Sexo:</legend>
+                        <input type="radio" name="t_sexo" id="c_masculino" /><label for="c_masculino">Masculino</label>
+                        <br/>
+                        <input type="radio" name="t_sexo" id="c_feminino" checked="checked"><label for="c_feminino">Feminino</label>
+                    </fieldset>
+                    <!-- FIM CAMPOS DE INFORMAÇÃO DO SEXO DO USUÁRIO -->
+                    <p>
+                        <label for="c_nascimento">Data de Nascimento:</label><input type="date" name="t_nascimento" id="c_nascimento" />
+                    </p>
+                    </fieldset>
+                    <fieldset id="usuario">
+                        <legend>Endereço do Usuário</legend>
+                        <p>
+                            <label for="c_endereco">Logradouro:</label><input type="text" name="t_endereco" id="c_endereco" size="13" maxlength="80" />
+                        </p>
+                        <p>
+                            <label for="c_numero">Número:</label>
+                            <input type="number" name="t_numero" id="c_numero" min="1" max="99999" />
+                        </p>
+                        <p>
+                            <label for="c_estado">Estado:</label>
+                        </p>
+                        <p>
+                            <label for="c_cidade">Cidade:</label>
+                        </p>
+                    </fieldset>
+                    <!-- FIM CAMPOS DE INFORMAÇÃO DO ENDEREÇO DO USUÁRIO -->
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <p>Grau de Urgência:</p>
+                        <p>Mensagem:</p>
+                    </fieldset>
+                    <!-- FIM CAMPOS DE MENSAGENS DO USUÁRIO -->
+                    <fieldset id="pedido">
+                        <legend>Quero um Google Glass Gostaria de adquirir um Google Glass quando disponível</legend>
+                        <p>Cor:</p>
+                        <p>Quantidade:</p>
+                        <p>Preço Total: R$</p>
+                    </fieldset>
+                    <!-- FIM CAMPOS DE PEDIDOS DO USUÁRIO -->
+                    <button>Enviar</button>
+                </form>
             </article>
         </section>
         <footer>
