@@ -25,3 +25,15 @@
     top: 60px;
     left: 85px;
 }
+
+
+/*      ESTILIZAÇÃO DE VÍDEOS       */
+
+#videoPrincipal {
+    width: 500px;
+    margin: 10px auto;
+}
+
+#videoLateral {
+    width: 330px;
+}
